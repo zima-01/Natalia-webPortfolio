@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F9F9F9;
+}
+.row{
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  float: left;
+  margin-left: 100px;
+  margin-top: 50px;
+
+
+}
+
+.column1{
+  position: relative;
+  display: block;
+
+  width: 30%;
+  height: auto;
+
+
+}
+.column2 img{
+  border-radius: 55%;
+margin-right: 50px;
+position: relative;
+z-index: -1;
+}
+.row button{
+  margin-top: 50px;
+}
+
+
+
+/* CSS */
+.button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-87:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #F76E11;
+  opacity: 80%;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.icolumn1:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.icons{
+  display: flex;
+  padding-top: 20px;
+
+}
+.icons img{
+  padding-right: 10px;
+}
+
+.icons ul li{
+  background-image: url('images/instagram.png');
+}
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media(max-width:992px){
+  .column1{
+    width: 100%;
+  }
+}
+@media(max-width:412px){
+  .column2{
+    width: 100%;
+    margin-right: 100px;
+  }
+}
